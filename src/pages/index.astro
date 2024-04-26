@@ -1,0 +1,112 @@
+---
+import { Icon } from 'astro-icon/components';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Icon</title>
+	</head>
+	<body>
+		<div id="wrapper">
+		<h1>Astro Icon</h1>
+		<hr/>
+
+		<div class="icon-container">
+			<a href="https://chs.chusd.org/"></a>
+		<Icon name="resume" width={100} height={100}/>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea ab molestiae illum placeat dolore, facilis ipsam impedit perferendis provident omnis mollitia non repellat quisquam voluptate inventore excepturi ratione est vitae!</p>
+	</div>
+	
+	<div class="icon-container">
+		<a href="https://google.com"></a>
+		<Icon name="design" width={100} height={100}/>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non voluptatibus numquam tempora, neque, ad amet quas aperiam nam doloremque sequi commodi velit, laudantium esse totam. Temporibus perferendis debitis deleniti.</p>
+		</div>
+
+		<div class="icon-container">
+			<a href="https://yahoo.com/"></a>
+		<Icon name="programming" width={100} height={100}/>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi illum possimus consequatur! Qui voluptatem hic tempore, accusantium corrupti dicta enim voluptatibus doloribus accusamus quasi officiis corporis vero ipsum nulla eum.</p>
+		</div>
+
+	    <div class="icon-container">
+			<a href="https://youtube.com/"></a>
+		<Icon name="career" size={100}/>
+		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus eaque, officiis molestiae qui, ea animi laudantium labore harum, ab culpa veniam temporibus! Totam illum unde neque exercitationem reiciendis animi officiis.</p>
+		</div>
+
+		<div class="icon-container">
+		<a href="https://facebook.com/"></a>
+		<Icon name="zombie" size={100}/>
+		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel vitae, blanditiis cum eveniet saepe natus, quis culpa, magnam nemo nesciunt voluptate officia iure a! Tempora distinctio quae quos quo amet!</p>
+		</div>
+
+
+	</div>
+	</body>
+</html>
+<style>
+#wrapper
+{
+	max-width: 1200px;
+	margin: auto;
+}
+h1
+{
+	text-align: center;
+}
+.icon-container
+{
+background-color: none;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: top;
+line-height: 1.7;
+gap: 2rem;
+}
+
+[data-icon="resume"]
+{
+	background-color: red;
+	color: white;
+}
+[data-icon="programming"]
+{
+	transition: all 1s;
+	background-color: purple;
+}
+[data-icon="programming"]:hover
+{
+	transform: rotate(360deg);
+}
+[data-icon="design"]
+{
+	background-color: blue;
+}
+[data-icon="career"]
+{
+	background-color: cyan;
+	color: black;
+	min-width: 100px;
+	margin: .5rem;
+	padding: .5rem;
+	transition: all .25s;
+}
+[data-icon="career"]:hover
+{
+	transform: rotate(26deg);
+}
+[data-icon="zombie"]
+{
+	background-color: darkgreen;
+}
+
+
+
+
+</style>
